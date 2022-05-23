@@ -1,0 +1,15 @@
+logging:
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%"
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: America/Mexico_City
+    default-property-inclusion: non-null
+
+springdoc:
+  swagger-ui:
+    enabled: true
+    path: /swagger/index.html
